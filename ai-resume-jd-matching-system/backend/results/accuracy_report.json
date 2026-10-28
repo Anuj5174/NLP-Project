@@ -1,0 +1,585 @@
+{
+  "total_test_cases": 20,
+  "correct": 13,
+  "accuracy_pct": 65.0,
+  "results": [
+    {
+      "id": 1,
+      "label": "Python Dev vs Python JD",
+      "resume": "\n            Experienced Python developer with 3 years building REST APIs using FastAPI and Django.\n            Strong skills in PostgreSQL, Redis, Docker, AWS, Git, SQLAlchemy, and Pydantic.\n            Developed machine learning pipelines using scikit-learn and pandas.\n            Experience with React frontend and Tailwind CSS.\n        ",
+      "jd": "\n            We are looking for a Python Backend Developer with experience in FastAPI or Django.\n            Must have: Python, PostgreSQL, REST API development, Git, Docker.\n            Bonus: AWS, React, Machine Learning experience.\n        ",
+      "resume_skills": [
+        "Python",
+        "FastAPI",
+        "Django",
+        "PostgreSQL",
+        "Docker",
+        "AWS",
+        "Git",
+        "React",
+        "scikit-learn"
+      ],
+      "jd_skills": [
+        "Python",
+        "PostgreSQL",
+        "FastAPI",
+        "Git",
+        "Docker"
+      ],
+      "expected": "Highly Recommended",
+      "score": 78.36,
+      "got": "Highly Recommended",
+      "correct": true,
+      "bert_score": 0.8133,
+      "tfidf_score": 0.3782,
+      "scoring_method": "hybrid_bert_tfidf"
+    },
+    {
+      "id": 2,
+      "label": "Data Scientist vs Data Science JD",
+      "resume": "\n            Data Scientist with expertise in machine learning, deep learning, and NLP.\n            Proficient in Python, TensorFlow, PyTorch, scikit-learn, pandas, numpy.\n            Built recommendation systems and NLP pipelines for e-commerce.\n            Strong knowledge of SQL, MongoDB, and data visualization with matplotlib.\n        ",
+      "jd": "\n            Data Scientist required. Must know Python, scikit-learn, TensorFlow, pandas, numpy.\n            Experience with NLP, recommendation systems, and SQL required.\n            Strong problem solving and data visualization skills.\n        ",
+      "resume_skills": [
+        "Python",
+        "TensorFlow",
+        "PyTorch",
+        "scikit-learn",
+        "pandas",
+        "numpy",
+        "SQL",
+        "NLP",
+        "MongoDB"
+      ],
+      "jd_skills": [
+        "Python",
+        "scikit-learn",
+        "TensorFlow",
+        "pandas",
+        "numpy",
+        "SQL",
+        "NLP"
+      ],
+      "expected": "Highly Recommended",
+      "score": 77.15,
+      "got": "Highly Recommended",
+      "correct": true,
+      "bert_score": 0.7432,
+      "tfidf_score": 0.4333,
+      "scoring_method": "hybrid_bert_tfidf"
+    },
+    {
+      "id": 3,
+      "label": "Full Stack Dev vs Full Stack JD",
+      "resume": "\n            Full Stack Developer experienced in React, Node.js, Express, MongoDB.\n            Built 5+ production web apps. Strong in JavaScript, TypeScript, REST APIs.\n            DevOps: Docker, CI/CD, AWS EC2, GitHub Actions.\n        ",
+      "jd": "\n            Full Stack Developer needed. React, Node.js, MongoDB, JavaScript required.\n            REST API experience essential. AWS and Docker knowledge preferred.\n        ",
+      "resume_skills": [
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "JavaScript",
+        "TypeScript",
+        "Docker",
+        "AWS"
+      ],
+      "jd_skills": [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "JavaScript",
+        "AWS",
+        "Docker"
+      ],
+      "expected": "Highly Recommended",
+      "score": 76.98,
+      "got": "Highly Recommended",
+      "correct": true,
+      "bert_score": 0.8102,
+      "tfidf_score": 0.3254,
+      "scoring_method": "hybrid_bert_tfidf"
+    },
+    {
+      "id": 4,
+      "label": "DevOps Engineer vs DevOps JD",
+      "resume": "\n            DevOps Engineer with 4 years experience. Expert in Docker, Kubernetes, Terraform, Jenkins.\n            AWS certified. Managed CI/CD pipelines for 10+ microservices. Linux, Bash scripting.\n        ",
+      "jd": "\n            DevOps Engineer with Docker, Kubernetes, AWS, Jenkins, Terraform expertise.\n            CI/CD pipeline experience essential. Linux and scripting skills required.\n        ",
+      "resume_skills": [
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "Jenkins",
+        "AWS",
+        "Linux",
+        "Bash"
+      ],
+      "jd_skills": [
+        "Docker",
+        "Kubernetes",
+        "AWS",
+        "Jenkins",
+        "Terraform",
+        "Linux"
+      ],
+      "expected": "Highly Recommended",
+      "score": 83.87,
+      "got": "Highly Recommended",
+      "correct": true,
+      "bert_score": 0.8944,
+      "tfidf_score": 0.4866,
+      "scoring_method": "hybrid_bert_tfidf"
+    },
+    {
+      "id": 5,
+      "label": "ML Engineer vs ML JD",
+      "resume": "\n            ML Engineer specializing in computer vision and NLP. Experience with BERT, transformers,\n            PyTorch, TensorFlow. Deployed models on AWS SageMaker. Python expert.\n        ",
+      "jd": "\n            ML Engineer needed. Must have PyTorch, TensorFlow, Python, and model deployment experience.\n            NLP or computer vision background preferred. AWS or GCP cloud experience.\n        ",
+      "resume_skills": [
+        "PyTorch",
+        "TensorFlow",
+        "Python",
+        "BERT",
+        "NLP",
+        "AWS",
+        "SageMaker"
+      ],
+      "jd_skills": [
+        "PyTorch",
+        "TensorFlow",
+        "Python",
+        "NLP",
+        "AWS"
+      ],
+      "expected": "Highly Recommended",
+      "score": 76.3,
+      "got": "Highly Recommended",
+      "correct": true,
+      "bert_score": 0.7182,
+      "tfidf_score": 0.4351,
+      "scoring_method": "hybrid_bert_tfidf"
+    },
+    {
+      "id": 6,
+      "label": "Java Dev vs Python JD (partial)",
+      "resume": "\n            Java developer with 2 years experience in Spring Boot, Hibernate, MySQL.\n            Basic Python knowledge. REST API development, Git, Maven, Linux.\n        ",
+      "jd": "\n            Python Developer needed. FastAPI, PostgreSQL, REST APIs, Git required.\n            Machine learning experience preferred.\n        ",
+      "resume_skills": [
+        "Java",
+        "Spring Boot",
+        "MySQL",
+        "Python",
+        "REST API",
+        "Git",
+        "Linux"
+      ],
+      "jd_skills": [
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "REST API",
+        "Git"
+      ],
+      "expected": "Recommended",
+      "score": 54.75,
+      "got": "Consider",
+      "correct": false,
+      "bert_score": 0.6066,
+      "tfidf_score": 0.2046,
+      "scoring_method": "hybrid_bert_tfidf"
+    },
+    {
+      "id": 7,
+      "label": "Frontend Dev vs Full Stack JD",
+      "resume": "\n            Frontend developer skilled in React, Vue.js, JavaScript, CSS, HTML, Tailwind.\n            Basic Node.js and Express knowledge. REST API consumption experience.\n        ",
+      "jd": "\n            Full Stack Developer with React, Node.js, MongoDB, REST API experience needed.\n            TypeScript knowledge preferred.\n        ",
+      "resume_skills": [
+        "React",
+        "Vue.js",
+        "JavaScript",
+        "CSS",
+        "HTML",
+        "Node.js",
+        "Express"
+      ],
+      "jd_skills": [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "REST API",
+        "TypeScript"
+      ],
+      "expected": "Recommended",
+      "score": 58.61,
+      "got": "Consider",
+      "correct": false,
+      "bert_score": 0.761,
+      "tfidf_score": 0.3838,
+      "scoring_method": "hybrid_bert_tfidf"
+    },
+    {
+      "id": 8,
+      "label": "Data Analyst vs Data Scientist JD",
+      "resume": "\n            Data Analyst with strong SQL, Excel, Power BI, and Python (pandas, matplotlib) skills.\n            Experience with statistical analysis and data cleaning. Tableau dashboards.\n        ",
+      "jd": "\n            Data Scientist needed. Python, machine learning, scikit-learn, pandas, SQL required.\n            Statistical background and data visualization skills preferred.\n        ",
+      "resume_skills": [
+        "SQL",
+        "Python",
+        "pandas",
+        "Excel",
+        "Power BI",
+        "Tableau",
+        "Statistics"
+      ],
+      "jd_skills": [
+        "Python",
+        "scikit-learn",
+        "pandas",
+        "SQL",
+        "Statistics"
+      ],
+      "expected": "Recommended",
+      "score": 67.82,
+      "got": "Recommended",
+      "correct": true,
+      "bert_score": 0.7376,
+      "tfidf_score": 0.3028,
+      "scoring_method": "hybrid_bert_tfidf"
+    },
+    {
+      "id": 9,
+      "label": "Manual QA vs Automation JD",
+      "resume": "\n            QA Engineer with 2 years experience in manual testing, test cases, bug reporting.\n            Basic Selenium knowledge. JIRA, TestRail. Some Python scripting.\n        ",
+      "jd": "\n            Automation Test Engineer needed. Selenium, Python, pytest, Jenkins CI/CD required.\n            REST API testing with Postman. Strong programming background.\n        ",
+      "resume_skills": [
+        "Manual Testing",
+        "Selenium",
+        "Python",
+        "JIRA",
+        "TestRail"
+      ],
+      "jd_skills": [
+        "Selenium",
+        "Python",
+        "pytest",
+        "Jenkins",
+        "Postman",
+        "REST API"
+      ],
+      "expected": "Consider",
+      "score": 46.96,
+      "got": "Not Recommended",
+      "correct": false,
+      "bert_score": 0.6366,
+      "tfidf_score": 0.1685,
+      "scoring_method": "hybrid_bert_tfidf"
+    },
+    {
+      "id": 10,
+      "label": "PHP Dev vs Python JD",
+      "resume": "\n            PHP developer with Laravel, MySQL, JavaScript, HTML, CSS. \n            Built e-commerce websites. Basic Python knowledge. REST API experience.\n        ",
+      "jd": "\n            Python Backend Developer. FastAPI, PostgreSQL, Redis, Docker, REST API required.\n            Machine learning experience is a plus.\n        ",
+      "resume_skills": [
+        "PHP",
+        "Laravel",
+        "MySQL",
+        "JavaScript",
+        "Python",
+        "REST API"
+      ],
+      "jd_skills": [
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "Redis",
+        "Docker",
+        "REST API"
+      ],
+      "expected": "Consider",
+      "score": 46.11,
+      "got": "Not Recommended",
+      "correct": false,
+      "bert_score": 0.5903,
+      "tfidf_score": 0.2026,
+      "scoring_method": "hybrid_bert_tfidf"
+    },
+    {
+      "id": 11,
+      "label": "Marketing MBA vs Python Dev JD",
+      "resume": "\n            MBA in Marketing with 3 years experience in digital marketing, SEO, Google Ads.\n            Social media management, content writing, email campaigns, brand strategy.\n        ",
+      "jd": "\n            Python Developer needed. FastAPI, PostgreSQL, Docker, machine learning required.\n            Strong programming and computer science background essential.\n        ",
+      "resume_skills": [
+        "Marketing",
+        "SEO",
+        "Google Ads",
+        "Content Writing"
+      ],
+      "jd_skills": [
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "Docker",
+        "Machine Learning"
+      ],
+      "expected": "Not Recommended",
+      "score": 8.71,
+      "got": "Not Recommended",
+      "correct": true,
+      "bert_score": 0.2419,
+      "tfidf_score": 0.0,
+      "scoring_method": "hybrid_bert_tfidf"
+    },
+    {
+      "id": 12,
+      "label": "Graphic Designer vs Data Scientist JD",
+      "resume": "\n            Graphic designer with expertise in Adobe Photoshop, Illustrator, Figma, InDesign.\n            UI/UX design, logo design, brand identity. Some HTML and CSS knowledge.\n        ",
+      "jd": "\n            Data Scientist with Python, machine learning, NLP, deep learning, SQL required.\n            Strong statistical background and research experience.\n        ",
+      "resume_skills": [
+        "Photoshop",
+        "Illustrator",
+        "Figma",
+        "HTML",
+        "CSS"
+      ],
+      "jd_skills": [
+        "Python",
+        "Machine Learning",
+        "NLP",
+        "SQL",
+        "Statistics",
+        "Deep Learning"
+      ],
+      "expected": "Not Recommended",
+      "score": 25.32,
+      "got": "Not Recommended",
+      "correct": true,
+      "bert_score": 0.4387,
+      "tfidf_score": 0.0,
+      "scoring_method": "hybrid_bert_tfidf"
+    },
+    {
+      "id": 13,
+      "label": "HR Manager vs DevOps JD",
+      "resume": "\n            HR Manager with experience in talent acquisition, payroll, employee relations.\n            HRIS systems, performance management, compliance, onboarding.\n        ",
+      "jd": "\n            DevOps Engineer with Docker, Kubernetes, AWS, Jenkins, Linux, Terraform required.\n            CI/CD pipeline management and scripting skills essential.\n        ",
+      "resume_skills": [
+        "HR Management",
+        "Talent Acquisition",
+        "Payroll",
+        "HRIS"
+      ],
+      "jd_skills": [
+        "Docker",
+        "Kubernetes",
+        "AWS",
+        "Jenkins",
+        "Linux",
+        "Terraform"
+      ],
+      "expected": "Not Recommended",
+      "score": 19.47,
+      "got": "Not Recommended",
+      "correct": true,
+      "bert_score": 0.3438,
+      "tfidf_score": 0.035,
+      "scoring_method": "hybrid_bert_tfidf"
+    },
+    {
+      "id": 14,
+      "label": "Accountant vs ML Engineer JD",
+      "resume": "\n            Chartered Accountant with expertise in financial reporting, taxation, audit.\n            Tally ERP, SAP Finance, Excel. Strong analytical and compliance skills.\n        ",
+      "jd": "\n            ML Engineer. Python, PyTorch, TensorFlow, model training, AWS SageMaker.\n            Computer vision or NLP experience required.\n        ",
+      "resume_skills": [
+        "Accounting",
+        "Tally",
+        "SAP",
+        "Excel",
+        "Finance",
+        "Audit"
+      ],
+      "jd_skills": [
+        "Python",
+        "PyTorch",
+        "TensorFlow",
+        "AWS",
+        "NLP",
+        "Computer Vision"
+      ],
+      "expected": "Not Recommended",
+      "score": 17.61,
+      "got": "Not Recommended",
+      "correct": true,
+      "bert_score": 0.3503,
+      "tfidf_score": 0.0,
+      "scoring_method": "hybrid_bert_tfidf"
+    },
+    {
+      "id": 15,
+      "label": "Civil Engineer vs Java Dev JD",
+      "resume": "\n            Civil Engineer with experience in AutoCAD, structural design, project management.\n            Site supervision, quantity estimation, BOQ preparation, MS Project.\n        ",
+      "jd": "\n            Java Developer. Spring Boot, Hibernate, MySQL, REST APIs, Maven, Git required.\n            Microservices architecture experience preferred.\n        ",
+      "resume_skills": [
+        "AutoCAD",
+        "Structural Design",
+        "Project Management",
+        "MS Project"
+      ],
+      "jd_skills": [
+        "Java",
+        "Spring Boot",
+        "Hibernate",
+        "MySQL",
+        "REST API",
+        "Maven",
+        "Git"
+      ],
+      "expected": "Not Recommended",
+      "score": 14.63,
+      "got": "Not Recommended",
+      "correct": true,
+      "bert_score": 0.2309,
+      "tfidf_score": 0.0318,
+      "scoring_method": "hybrid_bert_tfidf"
+    },
+    {
+      "id": 16,
+      "label": "Fresher CS student vs Python Dev JD",
+      "resume": "\n            BCS final year student. Knowledge of Python, Java, HTML, CSS, JavaScript basics.\n            Academic projects: student management system, library system.\n            Coursework: Data Structures, DBMS, Operating Systems, Networking.\n        ",
+      "jd": "\n            Junior Python Developer. Python, REST APIs, basic SQL required.\n            Freshers welcome. Willingness to learn FastAPI and PostgreSQL.\n        ",
+      "resume_skills": [
+        "Python",
+        "Java",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "SQL"
+      ],
+      "jd_skills": [
+        "Python",
+        "REST API",
+        "SQL"
+      ],
+      "expected": "Recommended",
+      "score": 42.63,
+      "got": "Not Recommended",
+      "correct": false,
+      "bert_score": 0.4866,
+      "tfidf_score": 0.0528,
+      "scoring_method": "hybrid_bert_tfidf"
+    },
+    {
+      "id": 17,
+      "label": "React Dev vs Node.js backend JD",
+      "resume": "\n            React developer with 2 years experience. JavaScript, TypeScript, Redux, Next.js.\n            Good understanding of REST APIs. Basic Node.js knowledge.\n        ",
+      "jd": "\n            Node.js Backend Developer. Node.js, Express, MongoDB, REST APIs, JWT auth required.\n            Knowledge of React is a bonus.\n        ",
+      "resume_skills": [
+        "React",
+        "JavaScript",
+        "TypeScript",
+        "Redux",
+        "Next.js",
+        "Node.js"
+      ],
+      "jd_skills": [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "REST API",
+        "JWT"
+      ],
+      "expected": "Consider",
+      "score": 53.07,
+      "got": "Consider",
+      "correct": true,
+      "bert_score": 0.7511,
+      "tfidf_score": 0.4181,
+      "scoring_method": "hybrid_bert_tfidf"
+    },
+    {
+      "id": 18,
+      "label": "Android Dev vs Flutter JD",
+      "resume": "\n            Android developer with Java, Kotlin, Android SDK, Room DB, Retrofit.\n            Published 3 apps on Play Store. Firebase, REST API integration.\n        ",
+      "jd": "\n            Flutter Developer needed. Flutter, Dart, Firebase, REST APIs required.\n            Mobile development experience preferred. iOS knowledge a plus.\n        ",
+      "resume_skills": [
+        "Java",
+        "Kotlin",
+        "Android",
+        "Firebase",
+        "REST API",
+        "Room DB"
+      ],
+      "jd_skills": [
+        "Flutter",
+        "Dart",
+        "Firebase",
+        "REST API"
+      ],
+      "expected": "Consider",
+      "score": 48.53,
+      "got": "Not Recommended",
+      "correct": false,
+      "bert_score": 0.5942,
+      "tfidf_score": 0.0893,
+      "scoring_method": "hybrid_bert_tfidf"
+    },
+    {
+      "id": 19,
+      "label": "Senior Python Dev vs Python JD",
+      "resume": "\n            Senior Python developer with 6 years experience. Expert in Django, FastAPI, Flask.\n            PostgreSQL, MongoDB, Redis, Elasticsearch. AWS, GCP, Docker, Kubernetes.\n            Led team of 5 developers. Microservices, gRPC, Kafka, CI/CD.\n        ",
+      "jd": "\n            Python Developer. FastAPI or Django, PostgreSQL, Docker required.\n            AWS experience preferred. REST API development essential.\n        ",
+      "resume_skills": [
+        "Python",
+        "Django",
+        "FastAPI",
+        "Flask",
+        "PostgreSQL",
+        "MongoDB",
+        "Redis",
+        "AWS",
+        "Docker",
+        "Kubernetes",
+        "Kafka"
+      ],
+      "jd_skills": [
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "Docker",
+        "AWS",
+        "REST API"
+      ],
+      "expected": "Highly Recommended",
+      "score": 69.22,
+      "got": "Recommended",
+      "correct": false,
+      "bert_score": 0.7649,
+      "tfidf_score": 0.2784,
+      "scoring_method": "hybrid_bert_tfidf"
+    },
+    {
+      "id": 20,
+      "label": "Content Writer vs Full Stack JD",
+      "resume": "\n            Content writer and blogger. SEO writing, copywriting, technical writing.\n            WordPress, Canva, basic HTML knowledge. Strong English communication skills.\n        ",
+      "jd": "\n            Full Stack Developer. React, Node.js, MongoDB, Python, Docker required.\n            Strong programming background and computer science fundamentals.\n        ",
+      "resume_skills": [
+        "Content Writing",
+        "SEO",
+        "WordPress",
+        "HTML",
+        "Canva"
+      ],
+      "jd_skills": [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Python",
+        "Docker"
+      ],
+      "expected": "Not Recommended",
+      "score": 22.96,
+      "got": "Not Recommended",
+      "correct": true,
+      "bert_score": 0.3393,
+      "tfidf_score": 0.0309,
+      "scoring_method": "hybrid_bert_tfidf"
+    }
+  ]
+}
