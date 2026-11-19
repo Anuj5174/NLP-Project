@@ -42,12 +42,32 @@ async def match_single(
     if not jd:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Job description not found")
 
+    # 1. Cleanly normalize resume skills
+    resume_skills = []
+    if isinstance(resume.skills_extracted, dict):
+        resume_skills = [s["skill"] for s in resume.skills_extracted.get("skills", []) if isinstance(s, dict) and "skill" in s]
+    elif isinstance(resume.skills_extracted, list):
+        resume_skills = [s if isinstance(s, str) else s.get("skill", "") for s in resume.skills_extracted]
+    if not resume_skills and resume.extracted_text:
+        from app.utils.skill_extractor import get_skill_names_only
+        resume_skills = get_skill_names_only(resume.extracted_text)
+
+    # 2. Cleanly normalize JD skills; auto-extract from description if empty
+    jd_required_skills = []
+    if jd.required_skills and isinstance(jd.required_skills, list) and len(jd.required_skills) > 0:
+        jd_required_skills = [s for s in jd.required_skills if isinstance(s, str)]
+    if not jd_required_skills and jd.description:
+        from app.utils.skill_extractor import get_skill_names_only
+        jd_required_skills = get_skill_names_only(jd.description)
+        jd.required_skills = jd_required_skills
+        db.commit()
+
     # Run matching algorithm with skills
     result = match_resume_to_jd(
         resume_text=resume.extracted_text or "",
         jd_text=jd.description or "",
-        resume_skills=resume.skills_extracted or [],
-        jd_required_skills=jd.required_skills or []
+        resume_skills=resume_skills,
+        jd_required_skills=jd_required_skills
     )
 
     # Save result to database
@@ -101,15 +121,35 @@ async def match_bulk(
     if not resumes:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="No resumes found")
 
+    # Cleanly normalize JD skills once for bulk matching
+    jd_required_skills = []
+    if jd.required_skills and isinstance(jd.required_skills, list) and len(jd.required_skills) > 0:
+        jd_required_skills = [s for s in jd.required_skills if isinstance(s, str)]
+    if not jd_required_skills and jd.description:
+        from app.utils.skill_extractor import get_skill_names_only
+        jd_required_skills = get_skill_names_only(jd.description)
+        jd.required_skills = jd_required_skills
+        db.commit()
+
     results = []
 
     for resume in resumes:
+        # Normalize resume skills
+        resume_skills = []
+        if isinstance(resume.skills_extracted, dict):
+            resume_skills = [s["skill"] for s in resume.skills_extracted.get("skills", []) if isinstance(s, dict) and "skill" in s]
+        elif isinstance(resume.skills_extracted, list):
+            resume_skills = [s if isinstance(s, str) else s.get("skill", "") for s in resume.skills_extracted]
+        if not resume_skills and resume.extracted_text:
+            from app.utils.skill_extractor import get_skill_names_only
+            resume_skills = get_skill_names_only(resume.extracted_text)
+
         # Run matching algorithm with skills
         result = match_resume_to_jd(
             resume_text=resume.extracted_text or "",
             jd_text=jd.description or "",
-            resume_skills=resume.skills_extracted or [],
-            jd_required_skills=jd.required_skills or []
+            resume_skills=resume_skills,
+            jd_required_skills=jd_required_skills
         )
 
         db_result = MatchingResult(

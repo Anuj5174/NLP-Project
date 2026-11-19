@@ -56,13 +56,17 @@ async def create_jd(
     current_user: Annotated[User, Depends(get_current_active_user)] = None,
     db: Session = Depends(get_db)
 ):
-    """Create a new job description"""
+    skills = jd_data.required_skills
+    if not skills and jd_data.description:
+        from app.utils.skill_extractor import get_skill_names_only
+        skills = get_skill_names_only(jd_data.description)
+
     db_jd = JobDescription(
         user_id=current_user.user_id,
         title=jd_data.title,
         company_name=jd_data.company_name,
         description=jd_data.description,
-        required_skills=jd_data.required_skills,
+        required_skills=skills,
         experience_required=jd_data.experience_required,
         location=jd_data.location,
         created_at=datetime.utcnow(),
